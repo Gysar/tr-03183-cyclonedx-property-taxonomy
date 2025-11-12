@@ -24,6 +24,8 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 | **`bsi:component:filename`** | A field providing the actual filename of the component (i.e. not its path); see also section 5.2.2 of **BSI-TR-03183-2 v2.1.0**. For additional explanation see section 3.2.1 of **BSI TR-03183-2 v2.1.0**.<br />Only valid for use in `components[]/properties` and `metadata/component/properties`. MUST occur at most once per component. |
 | **`bsi:component:effectiveLicence`** | A field providing the effective licence of the component as a single licence identifier or licence expression set by the creator of the current SBOM; see also section 5.2.5 of **BSI TR-03183-2 v2.1.0**. For additional explanation see sections 6.1 and 8.1.13 of **BSI TR-03183-2 v2.1.0**.<br />Only valid for use in `components[]/properties` and `metadata/component/properties`. MUST occur exactly once per component. |
 | **`bsi:component:associatedLicences`**<br />`deprecated` | A field providing the associated licence(s) of the component as a single licence identifier or licence expression from the perspective of the SBOM creator; see also section 5.2.2 of **BSI TR-03183-2 v2.0.0**. For additional explanation see sections 6.1 and 8.1.9 of **BSI TR-03183-2 v2.0.0**.<br />Only valid for use in `components[]/properties` and `metadata/component/properties`. MUST occur exactly once per component. |
+| **`bsi:component:descriptionLevel`**<br />`optional` | A flag indicating the description level of the component; possible values are `identified component` and `fully described component`<br />Only valid for use in `components[]/properties` and `metadata/component/properties`. |
+| **`bsi:component:logical`**<br />`optional` | A flag indicating whether the component is logical; possible values are `logical` and `non-logical`<br />Only valid for use in `components[]/properties` and `metadata/component/properties`. |
 
 ## Contributing
 
@@ -34,3 +36,4 @@ If you have questions, suggestions or found a flaw, please browse through the ex
 © Copyright 2024-2025 German Federal Office for Information Security (BSI)
 
 Licensed under [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html).
+
